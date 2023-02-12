@@ -15,7 +15,8 @@ app-action:
               content-resource: classpath://org/nasdanika/html/model/app/gen/search.html
     - app-action:
         location: ${base-uri}semantic-map.html
-        text: Semantic map
+        text: Glossary
+        icon: fas fa-book
         content:
           content-interpolator:
             source:
