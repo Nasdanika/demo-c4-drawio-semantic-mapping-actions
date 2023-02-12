@@ -1,0 +1,1 @@
+The internal [Microsoft Exchange](https://en.wikipedia.org/wiki/Microsoft_Exchange_Server) e-mail system.

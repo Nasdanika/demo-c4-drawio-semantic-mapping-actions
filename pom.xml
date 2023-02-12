@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.nasdanika.demo</groupId>
+	<artifactId>c4-drawio-semantic-mappin-actions</artifactId>
+	<version>2023.2.0</version>
+	<name>C4 Drawio semantic mapping action site demo</name>
+	<description>Demo of a web site generated from an action model loaded from Drawio C4 diagrams using semantic mapping</description>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-site-plugin</artifactId>
+				<configuration>
+					<skip>true</skip>
+					<skipDeploy>true</skipDeploy>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.nasdanika.html</groupId>
+				<artifactId>site-generator-maven-plugin</artifactId>
+				<version>2023.2.1</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>generate-action-site</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<action>model/actions.yml</action>
+					<pageTemplate>model/page-template.yml</pageTemplate>
+					<progressOutput>target/action-site-progress.txt</progressOutput>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
+

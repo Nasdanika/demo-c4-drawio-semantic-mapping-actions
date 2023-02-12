@@ -1,0 +1,29 @@
+app-action:
+  icon: https://docs.nasdanika.org/images/nasdanika-logo.png
+  text: Nasdanika
+  location: https://www.nasdanika.org 
+  tooltip: Root action
+  children:
+    - "context.drawio#/"
+    - app-action:
+        location: ${base-uri}search.html
+        icon: fas fa-search
+        text: Search
+        content:
+          content-interpolator:
+            source:
+              content-resource: classpath://org/nasdanika/html/model/app/gen/search.html
+    - app-action:
+        location: ${base-uri}semantic-map.html
+        text: Semantic map
+        content:
+          content-interpolator:
+            source:
+              content-resource: classpath://org/nasdanika/html/model/app/gen/semantic-map.html
+  navigation:
+    - app-action:
+        icon: fab fa-github
+        text: Source
+        location: https://github.com/Nasdanika/demo-action-site
+          
+          
