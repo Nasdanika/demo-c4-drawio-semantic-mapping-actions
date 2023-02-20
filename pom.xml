@@ -18,7 +18,7 @@
 			<plugin>
 				<groupId>org.nasdanika.html</groupId>
 				<artifactId>site-generator-maven-plugin</artifactId>
-				<version>2023.2.1</version>
+				<version>2023.2.2</version>
 				<executions>
 					<execution>
 						<goals>
@@ -27,6 +27,8 @@
 					</execution>
 				</executions>
 				<configuration>
+					<!-- 8 blank pages -->
+					<errors>8</errors>
 					<action>model/actions.yml</action>
 					<pageTemplate>model/page-template.yml</pageTemplate>
 					<progressOutput>target/action-site-progress.txt</progressOutput>
