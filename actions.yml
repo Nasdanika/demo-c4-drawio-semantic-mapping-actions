@@ -14,13 +14,13 @@ app-action:
             source:
               content-resource: classpath://org/nasdanika/html/model/app/gen/search.html
     - app-action:
-        location: ${base-uri}semantic-map.html
+        location: ${base-uri}glossary.html
         text: Glossary
         icon: fas fa-book
         content:
           content-interpolator:
             source:
-              content-resource: classpath://org/nasdanika/html/model/app/gen/semantic-map.html
+              content-resource: classpath://org/nasdanika/html/model/app/gen/semantic-info.html
   navigation:
     - app-action:
         icon: fab fa-github
